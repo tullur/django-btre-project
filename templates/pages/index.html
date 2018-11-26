@@ -2,6 +2,10 @@
 
 {% load humanize %}
 
+{% block title %}
+| Welcome 
+{% endblock title %}
+
 {% block content %}
 <!-- Showcase -->
 <section id="showcase">
@@ -66,6 +70,8 @@
   </div>
 </section>
 
+
+<br>
 <!-- Aler -->
 {% include 'partials/_alert.html' %}
 

@@ -56,7 +56,7 @@ def search(request):
         bedrooms = request.GET['bedrooms']
         if bedrooms:
             queryset_list = queryset_list.filter(bedrooms__lte=bedrooms)
-    
+
     # Price
     if 'price' in request.GET:
         price = request.GET['price']

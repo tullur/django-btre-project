@@ -1,4 +1,5 @@
 import dj_database_url
+import django_heroku
 from django.contrib.messages import constants as messages
 """
 Django settings for btre project.
@@ -159,3 +160,6 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
